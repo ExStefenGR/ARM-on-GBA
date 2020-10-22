@@ -1,0 +1,1 @@
+set path=X:\ARM\bin;%PATH%

@@ -50,3 +50,17 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+arm-eabi/
+
+bimbo1_21/
+
+bin/
+
+share/
+
+lib/
+
+include/
+
+libexec/
