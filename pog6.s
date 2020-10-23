@@ -24,6 +24,8 @@ Pixels1:
 Pixels2:
 	strh r1, [r0], #0x2
 	subs r2, r2, #0x1A
+		mov r1, #0xFF00 @loop2 colour
+		add r1, #0x2A
 
 infin:
 	b infin
