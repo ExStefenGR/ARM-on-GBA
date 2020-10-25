@@ -11,13 +11,15 @@ main:
 	mov r1, #0x0F @red colour
 
 	@Beginning of loop
-	mov r2, #0xF @F is for a row of Pixels Horizontally
-	add r2,  #0x1A
+	mov r2, #0xFF @F is for a row of Pixels Horizontally
+	add r2,  #0xA1
 Pixels1:
 	strh r1, [r0], #0x1
 	subs r2, r2, #0x1
 	bne Pixels1 @end of Pixels1
 
+	@To make animation work, my idea is to somehow put a large value of repetition to slow things down
+	@Negative hex?
 
 	mov r1, #0xFF00 @loop2 colour
 	add r1, #0x2A
