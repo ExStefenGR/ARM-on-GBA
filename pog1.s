@@ -1,13 +1,9 @@
 .arm
 .text
 .global main
-main: mov r0, #0x4000000
+main:
+	mov r0, #0x4000000
 	mov r1, #0x400
-	add r1, r1, #3
-	str r1, [r0]
-	mov r0, #0x6000000
-	mov r1, #0x12 @red colour
-	mov r2, #0x4B00
 	add r1, r1, #3
 	str r1, [r0]
 	mov r0, #0x6000000

@@ -21,6 +21,6 @@ loop1:
 loop2:
 	strh r1, [r0], #2
 	subs r2, r2, #1
-	bne loop1
+	bne loop2
 infin:
 	b infin
