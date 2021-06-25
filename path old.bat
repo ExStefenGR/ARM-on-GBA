@@ -1,1 +1,0 @@
-set path=C:\devkitpro\devkitarm\bin;%PATH%
