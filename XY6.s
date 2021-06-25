@@ -7,6 +7,7 @@ main:
 	add r1, r1, #3
 	str r1, [r0]
 
+
 	mov r7, #0x4000000 @register for Input
 	mov r8, #0x130 
 	add r7, r8 @Adds R8 to R7
@@ -42,12 +43,12 @@ sub1:
 	
 	add r0, r0, r3, lsl #1  @Moved calculation here instead of the main function
 
-	mul r6, r4, r5 
+	mul r6, r4, r5  
 	add r0, r0, r6 
 
 	
 
-	@strh r3, [r0]
+	strh r3, [r0]
 	strh r1, [r0]
 
 	ldmed r13!, {r0-r6,r14} @Goes back in the beginning of the subroutine
